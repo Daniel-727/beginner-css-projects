@@ -1,0 +1,84 @@
+* {
+    margin:0;
+    padding:0;
+  }
+  
+  body {
+      font-family: sans-serif;
+  }
+  
+  .container{
+    width:1500px;
+  }
+  
+  .product {
+    width:825px;
+    margin: 100px auto;
+    border: 5px solid black;
+    
+  }
+  
+  .product-title {
+    text-transform: uppercase;
+    background-color: #afafaf;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .price {
+    font-size: 30px;
+  }
+  
+  .shipping {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #afafaf;
+    margin-bottom: 20px;
+  }
+  
+  .product-description{
+    margin-bottom: 20px;
+  }
+  
+  /*ALWAYS SPECIFY FOR LINKS ALL FOUR STATES AND IN THE ORDER LINK, VISITED, HOVER, ACTIVE */
+  
+  .more-info:link, .more-info:visited {
+    color: black;
+    
+  }
+  
+  .more-info:hover, .more-info:active {
+    text-decoration: none;
+    
+  }
+  /***********************/
+  
+  .details-title{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:30px;
+  }
+  
+  .details-list{
+    list-style-type: square;
+    margin-left:20px;
+    line-height:2;
+    margin-bottom:20px;
+  }
+  
+  
+  .add-cart{
+    width:100%;
+    padding:12px;
+    border-top: 5px solid black;
+    background-color:black;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .add-cart:hover{
+    background-color:white;
+    color:black;
+  }

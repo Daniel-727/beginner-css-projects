@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .product {
+    border: 5px solid black;
+  }
+  
+  .product-title {
+    text-transform: uppercase;
+    background-color: #afafaf;
+    text-align: center;
+  }
+  
+  .price {
+    font-size: 30px;
+  }
+  
+  .shipping {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #afafaf;
+  }
+  
+  /*ALWAYS SPECIFY FOR LINKS ALL FOUR STATES AND IN THE ORDER LINK, VISITED, HOVER, ACTIVE */
+  .more-info:link, .more-info:visited {
+    color: black;
+  }
+  
+  .more-info:hover, .more-info:active {
+    text-decoration: none;
+  }
+  /***********************/
+  
+  .details-title{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .details-list{
+    list-style-type: square;
+  }
+  
+  .add-cart{
+    border: none;
+    background-color:black;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .add-cart:hover{
+    background-color:white;
+    color:black;
+  }
