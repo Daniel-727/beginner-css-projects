@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnifood Hero Section</title>
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-family: 'Rubik', sans-serif;
+            color: #444;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        header{
+            min-height: 100vh;
+            position: relative;
+
+            background-image: linear-gradient(rgba(26, 29, 32, 0.6), rgba(26, 29, 32, 0.6)), url('./hero.jpg'); /*you can use multiple images to overlay on top of eachother for the background, the leftmost one is the topmost image*/
+            background-size: cover;
+            color:#fff;
+        }
+
+        .hero{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* background-color: violet; */
+            transform: translate(-50%, -50%);
+        }
+
+        .hero-inner{ /*to make the content only take up half the width of the container element*/
+            width: 50%;
+        }
+
+        nav{
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 32px;
+        }
+
+        h1{
+            font-size: 52px;
+            margin-bottom: 32px;
+            line-height: 1.05;
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 48px;
+        }
+
+        .btn:link, .btn:visited{
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #e67e22;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block; /*this is required because the a element is an inline element so padding doesn't work as normal, so we are changing it to inline-block*/
+            padding: 16px 32px;
+            border-radius: 9px;
+        }
+
+        h2{
+            font-size: 44px;
+            margin-bottom: 48px;
+        }
+
+        section{
+            padding: 96px 0;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <nav class="container">
+            <div>LOGO</div>
+            <div>NAVIGATION</div>
+        </nav>
+
+        <div class="container hero">
+            <div class="hero-inner">
+                <h1>A healthy meal delivered to your door, every single day</h1>
+                <p>The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs</p>
+                <a href="#" class="btn">Start eating well</a>
+            </div>
+        </div>
+    </header>
+    
+    <section>
+        <div class="container">
+            <h2>Some random heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolore, accusantium quaerat debitis, quod voluptatibus rerum ex veritatis aliquid at culpa dolores veniam earum iusto vitae optio error eum et. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore enim eveniet molestiae, aut possimus necessitatibus aliquid perspiciatis expedita soluta dolorum inventore quae veniam nobis mollitia exercitationem facilis porro quia ipsum.</p>
+        </div>
+    </section>
+</body>
+</html>
