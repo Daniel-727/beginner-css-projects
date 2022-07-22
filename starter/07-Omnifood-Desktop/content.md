@@ -126,3 +126,18 @@ Careers
 Recipe directory
 Help center
 Privacy & terms
+
+
+######
+
+## Sections
+
+-Navigation
+-Hero
+-Featured in (usually right after hero sections)
+-How it works
+-Meals (and list of diets)
+-Photo Gallery + Testimonials
+-Pricing (usually quite low on a landing page) + Features (not very important so lower on the page)
+-CTA (usually last thing before footer)
+-Footer
