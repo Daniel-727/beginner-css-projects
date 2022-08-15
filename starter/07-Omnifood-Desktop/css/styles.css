@@ -12,6 +12,10 @@ default: 1
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
+- Letter spacing
+
+0.75px
+
 ---02 COLORS
 
 - primary: #e67e22
@@ -28,77 +32,6 @@ SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 */
-
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62.5%;
-}
-
-body{
-    font-family: 'Rubik', sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: #555;
-}
-
-/*------General Components------*/
-/*------------------------------*/
-
-.heading-primary{
-    font-size: 5.2rem;
-    font-weight: 700;
-    line-height: 1.05;
-    color: #333;
-    letter-spacing: -0.5px;
-    margin-bottom: 3.2rem;
-}
-
-/*anchor is an inline element, so in order for padding to work as expected, we need to make it an inline-block element*/
-.btn:link, .btn:visited{
-    font-size: 2rem;
-    text-decoration: none;
-    padding: 1.6rem 3.2rem;
-    border-radius: 9px;
-    display: inline-block;
-    font-weight: 600;
-
-    /*Put transition on original state*/
-    transition: all 0.3s;
-}
-
-.btn--full:link, .btn--full:visited{
-    background-color: #e67e22;
-    color: #fff;
-}
-
-.btn--full:hover, .btn--full:active{
-    background-color: #cf711f;
-    color: #fff;
-}
-
-.btn--outline:link, .btn--outline:visited{
-    background-color: #fff;
-    color: #555;
-}
-
-.btn--outline:hover, .btn--outline:active{
-    background-color: #fdf2e9;
-    color: #555;
-
-    /*Trick to add border inside*/
-    box-shadow: inset 0 0 0 3px #fff;
-}
-
-/*HELPER CLASSES*/
-.margin-right-sm{
-    margin-right: 1.6rem !important;
-}
 
 
 /*------------Header------------*/
@@ -161,6 +94,7 @@ body{
 .section-hero{
     background-color: #fdf2e9;
     padding: 4.8rem 0 9.6rem 0;
+    margin-bottom: 9.6rem;
 }
 
 .hero{
@@ -226,3 +160,67 @@ body{
     font-weight: 700;
 }
 
+
+/*------How it works section------*/
+/*--------------------------------*/
+
+.section-how{
+    padding: 9.6px 0;
+}
+
+.step-number{
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+}
+
+.step-img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.step-img-box::after, .step-img-box::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/*to make these after/before pseudo elements appear on the page we need to give it some content. the content can be an empty string, but there must be some content for it to appear*/
+.step-img-box::before{
+    width: 60%;
+    /*height: 60%; this height of 60% won't work on this pseudo element but the trick is to use padding-bottom:60% instead*/
+
+    /*60% of parent's width*/
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    z-index: -2;
+}
+
+
+
+.step-img-box::after{
+    width: 50%;
+    /*height: 60%; this height of 60% won't work on this pseudo element but the trick is to use padding-bottom:60% instead*/
+
+    /*60% of parent's width*/
+    padding-bottom: 50%;
+    background-color: #fae5d3;
+    z-index: -1;
+}
+
+.step-img{
+    width: 35%;
+}
+
+.step-description{
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
