@@ -193,7 +193,7 @@ SPACING SYSTEM (px)
 /*--------------------------------*/
 
 .section-how{
-    padding: 9.6px 0;
+    padding: 6.4rem 0;
 }
 
 .step-number{
@@ -232,8 +232,6 @@ SPACING SYSTEM (px)
     z-index: -2;
 }
 
-
-
 .step-img-box::after{
     width: 50%;
     /*height: 60%; this height of 60% won't work on this pseudo element but the trick is to use padding-bottom:60% instead*/
@@ -251,4 +249,31 @@ SPACING SYSTEM (px)
 .step-description{
     font-size: 1.6rem;
     line-height: 1.8;
+}
+
+
+
+/*------Meals section------*/
+/*-------------------------*/
+
+.section-meals{
+    padding: 6.4rem 0;
+}
+
+.meal-title{
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.meal-attributes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.meal-img{
+    width: 100%;
 }
