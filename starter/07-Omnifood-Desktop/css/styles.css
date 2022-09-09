@@ -265,6 +265,13 @@ SPACING SYSTEM (px)
     border-radius: 11px;
     overflow: hidden;
     /*instead of setting border-radius of the img, you can just use overflow: hidden; to hide any content that overflows out of the meal div*/
+    transition: all 0.4s;
+}
+
+.meal:hover{
+    /*you can use the hover pseudo class on elements that are not links*/
+    transform: translateY(-0.7rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.06);
 }
 
 .meal-content{
@@ -328,4 +335,29 @@ SPACING SYSTEM (px)
 
 .meal-img{
     width: 100%;
+}
+
+.all-recipes{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-icon{
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
 }

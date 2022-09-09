@@ -116,7 +116,31 @@ strong{
     font-weight: 500;
 }
 
+.link:link, .link:visited{
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    /*instead of giving an underline using a text-decoration, we give an underline by using the border which looks better. Also you can use the currentColor variable for the border to be the same color as the text color*/
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:hover, .link:active{
+    color:#cf711f;
+    /*we use border-bottom still to remove the underline because if we just use border:none, there will be a displacement of our 1px underline*/
+    border-bottom: 1px solid transparent;
+}
+
 /*HELPER CLASSES*/
 .margin-right-sm{
     margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text{
+    text-align: center;
 }
