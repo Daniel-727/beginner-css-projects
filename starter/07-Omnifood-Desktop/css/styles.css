@@ -417,6 +417,39 @@ SPACING SYSTEM (px)
     padding: 6.4rem 0;
 }
 
+.pricing-plan{
+    border-radius: 11px;
+    width: 75%;
+}
+
+.pricing-plan-starter{
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+    /*use calc to get ride of the 2px difference between the two pricing plans, or you can just set the padding for the start to be 4.6rem*/
+    padding: calc(4.8rem - 2px);
+}
+
+.pricing-plan-complete{
+    background-color: #fdf2e9;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan-complete::after{
+    content: "Best Value";
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    top: 8%;
+    right: -11%;
+    background-color: #ffd43b;
+    padding: 0.8rem 6rem;
+    color: #333;
+    transform: rotate(45deg);
+}
+
 .plan-header{
     text-align: center;
     margin-bottom: 4.8rem;
