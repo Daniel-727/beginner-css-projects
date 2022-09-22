@@ -261,7 +261,7 @@ SPACING SYSTEM (px)
 }
 
 .meal{
-    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.15);
     border-radius: 11px;
     overflow: hidden;
     /*instead of setting border-radius of the img, you can just use overflow: hidden; to hide any content that overflows out of the meal div*/
@@ -520,4 +520,31 @@ SPACING SYSTEM (px)
 .feature-text{
     font-size: 1.8rem;
     line-height: 1.8;
+}
+
+/*------CTA section------*/
+/*-----------------------*/
+
+.section-cta{
+    padding: 6.4rem 0;
+}
+
+.cta{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.15);
+    height: 50rem;
+    border-radius: 11px;
+    background-image: linear-gradient(135deg,#eb984e,#e67322);
+    overflow: hidden;
+}
+
+.cta-text-box{
+
+}
+
+.cta-img-box{
+    background-image: linear-gradient(135deg,rgba(235, 150, 76, 0.35),rgba(231, 116, 35, 0.35)), url('../img/eating.jpg');
+    background-size: cover;
+    background-position: center;
 }
